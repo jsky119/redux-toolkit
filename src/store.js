@@ -1,4 +1,4 @@
-import { createStore } from "react";
+import { createStore } from "redux";
 
 const ADD = "ADD";
 const DELETE = "DELETE";
@@ -13,7 +13,7 @@ const addToDo = (text) => {
 export const deleteToDo = (id) => {
   return {
     type: DELETE,
-    text,
+    id,
   };
 };
 
@@ -29,7 +29,5 @@ const reducer = (state = [], action) => {
 };
 
 const store = createStore(reducer);
-
-store.subscribe();
 
 export default store;
