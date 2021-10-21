@@ -1,1 +1,1 @@
-Learning React-Redux
+Learning Redux toolkit
