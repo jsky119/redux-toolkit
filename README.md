@@ -1,1 +1,3 @@
-Learning Redux toolkit
+## Learning Redux toolkit
+
+npm install @reduxjs/toolkit
