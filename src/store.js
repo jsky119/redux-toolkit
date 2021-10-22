@@ -41,6 +41,7 @@ const reducer = createReducer([], {
     state.push({ text: action.payload, id: Date.now() });
   },
   [deleteToDo]: (state, action) =>
+    //반면 filter는 새로운 array를 return한다.
     state.filter((toDo) => toDo.id !== action.payload),
 });
 
